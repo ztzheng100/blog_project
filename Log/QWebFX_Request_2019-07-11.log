@@ -1,0 +1,22 @@
+2019-07-11 23:17:24,427 [django.request:152] [base:get_response] [WARNING] Not Found: /favicon.ico
+2019-07-11 23:21:30,157 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\blog\views.py", line 14, in index
+    'welcome': '娆㈣繋璁块棶鎴戠殑鍗氬棣栭〉'
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: blog/index.html
+2019-07-11 23:47:01,450 [django.request:152] [base:get_response] [WARNING] Not Found: /favicon.ico
+2019-07-11 23:49:40,971 [django.request:152] [base:get_response] [WARNING] Not Found: /favicon.ico
+2019-07-11 23:52:42,763 [django.request:152] [base:get_response] [WARNING] Not Found: /index.html
+2019-07-11 23:54:44,085 [django.request:152] [base:get_response] [WARNING] Not Found: /favicon.ico

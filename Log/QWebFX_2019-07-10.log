@@ -1,0 +1,52 @@
+2019-07-10 19:34:14,177 [django.db.backends:90] [utils:execute] [DEBUG] (0.030) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-07-10 19:34:14,213 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-07-10 19:34:25,223 [views:15] [views:index] [ERROR] [Errno 2] No such file or directory: u'sss.txt'
+2019-07-10 19:34:25,292 [django.server:124] [basehttp:log_message] [INFO] "GET / HTTP/1.1" 200 158
+2019-07-10 22:08:37,167 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-07-10 22:08:37,174 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-07-10 22:14:53,216 [django.server:124] [basehttp:log_message] [INFO] "GET /admin/ HTTP/1.1" 302 0
+2019-07-10 22:14:53,581 [django.template:925] [base:_resolve_lookup] [DEBUG] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x048BA030>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0488F170>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x048AFE50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0488F150>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x0488F6D0>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x0488F2F0>}]"
+2019-07-10 22:14:53,657 [django.template:925] [base:_resolve_lookup] [DEBUG] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x048BA030>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0488F170>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x048AFE50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0488F150>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x0488F6D0>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x0488F2F0>}]"
+2019-07-10 22:14:53,674 [django.server:124] [basehttp:log_message] [INFO] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+2019-07-10 22:14:54,778 [django.server:124] [basehttp:log_message] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+2019-07-10 22:14:54,792 [django.server:124] [basehttp:log_message] [INFO] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+2019-07-10 22:14:54,792 [django.server:124] [basehttp:log_message] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2019-07-10 22:14:54,872 [django.server:124] [basehttp:log_message] [INFO] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+2019-07-10 22:14:54,872 [django.server:124] [basehttp:log_message] [INFO] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+2019-07-10 22:15:04,707 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=(u'admin',)
+2019-07-10 22:15:04,938 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=(u'admin',)
+2019-07-10 22:15:04,940 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 21; args=()
+2019-07-10 22:15:04,941 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=(u'admin',)
+2019-07-10 22:15:04,944 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=(u'admin',)
+2019-07-10 22:15:04,946 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=(u'admin',)
+2019-07-10 22:15:05,289 [django.server:124] [basehttp:log_message] [ERROR] "POST /admin/login/?next=/admin/ HTTP/1.1" 500 198903
+2019-07-10 22:15:54,443 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-07-10 22:15:54,446 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-07-10 22:15:54,450 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'zzt'; args=(u'zzt',)
+2019-07-10 22:16:19,323 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-07-10 22:16:19,332 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-07-10 22:16:30,578 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-07-10 22:16:30,582 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

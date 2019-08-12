@@ -1,0 +1,116 @@
+2019-07-15 00:19:28,559 [django.request:152] [base:get_response] [WARNING] Not Found: /post/3/full-width.html
+2019-07-15 12:40:37,269 [django.request:152] [base:get_response] [WARNING] Not Found: /favicon.ico
+2019-07-15 17:30:25,326 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\blog\views.py", line 14, in index
+    return render(request, 'blog/index.html', context={'post_list': post_list1})
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\library.py", line 203, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\python\python_code\blog_project\blog\templatetags\blog_tags.py", line 10, in archives
+    return Post.objects.dates('create_time','month', order='DESC')
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\query.py", line 737, in dates
+    plain_field=F(field_name)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\query.py", line 948, in annotate
+    clone.query.add_annotation(annotation, alias, is_summary=False)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\sql\query.py", line 973, in add_annotation
+    summarize=is_summary)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\functions\datetime.py", line 167, in resolve_expression
+    copy = super(TruncBase, self).resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\expressions.py", line 548, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\expressions.py", line 471, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\sql\query.py", line 1477, in resolve_ref
+    self.get_initial_alias(), reuse)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\sql\query.py", line 1417, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\db\models\sql\query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'create_time' into field. Choices are: author, author_id, body, category, category_id, created_time, excerpt, id, modified_time, tags, title
+2019-07-15 18:33:59,967 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /archives/2019/7/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\blog\views.py", line 41, in archives
+    created_time__month=month).orderby('-created_time')
+AttributeError: 'QuerySet' object has no attribute 'orderby'
+2019-07-15 18:41:18,512 [django.request:152] [base:get_response] [WARNING] Not Found: /archives/2019/
+2019-07-15 18:41:48,782 [django.request:152] [base:get_response] [WARNING] Not Found: /archives/2019/007/
+2019-07-15 19:08:55,671 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /archives/2019/7/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.archives didn't return an HttpResponse object. It returned None instead.
+2019-07-15 19:09:29,578 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /archives/2019/7/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.archives didn't return an HttpResponse object. It returned None instead.
+2019-07-15 19:12:08,135 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /archives/2019/7/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.archives didn't return an HttpResponse object. It returned None instead.
+2019-07-15 19:14:02,947 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /archives/2019/7/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.archives didn't return an HttpResponse object. It returned None instead.
+2019-07-15 19:17:10,010 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /archives/2019/7/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.archives didn't return an HttpResponse object. It returned None instead.
+2019-07-15 19:18:06,637 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /archives/2019/7/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.archives didn't return an HttpResponse object. It returned None instead.
+2019-07-15 19:33:03,075 [django.request:152] [base:get_response] [WARNING] Not Found: /archives/2019/7/index.html
+2019-07-15 19:59:54,381 [django.request:152] [base:get_response] [WARNING] Not Found: /category/4/

@@ -1,0 +1,102 @@
+2019-07-14 18:42:09,438 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 18:42:09,440 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 18:42:36,092 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 18:42:36,094 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT VERSION(); args=None
+2019-07-14 18:42:37,470 [django.db.backends:90] [utils:execute] [DEBUG] (1.165) SHOW FULL TABLES; args=None
+2019-07-14 18:42:37,500 [django.db.backends:90] [utils:execute] [DEBUG] (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-14 18:42:53,992 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 18:42:53,994 [django.db.backends:90] [utils:execute] [DEBUG] (0.003) SELECT `blog_post`.`id`, `blog_post`.`title`, `blog_post`.`body`, `blog_post`.`created_time`, `blog_post`.`modified_time`, `blog_post`.`excerpt`, `blog_post`.`category_id`, `blog_post`.`author_id` FROM `blog_post` ORDER BY `blog_post`.`created_time` DESC; args=()
+2019-07-14 18:42:54,029 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT VERSION(); args=None
+2019-07-14 18:42:54,030 [django.db.backends:90] [utils:execute] [DEBUG] (0.002) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 18:42:54,036 [django.db.backends:90] [utils:execute] [DEBUG] (0.002) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 18:42:54,039 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 18:42:54,042 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 18:42:54,046 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 18:42:54,052 [django.db.backends:90] [utils:execute] [DEBUG] (0.002) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 18:42:54,055 [django.server:124] [basehttp:log_message] [INFO] "GET / HTTP/1.1" 200 12559
+2019-07-14 18:42:56,744 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+2019-07-14 18:42:56,773 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/css/custom.css HTTP/1.1" 200 14568
+2019-07-14 18:42:56,785 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+2019-07-14 18:42:56,832 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+2019-07-14 18:42:56,838 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+2019-07-14 18:42:56,869 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+2019-07-14 18:42:56,901 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+2019-07-14 18:42:56,917 [django.server:124] [basehttp:log_message] [INFO] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+2019-07-14 18:42:57,783 [django.template:925] [base:_resolve_lookup] [DEBUG] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2019-07-14 18:42:57,898 [django.server:124] [basehttp:log_message] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2084
+2019-07-14 18:43:04,453 [django.template:925] [base:_resolve_lookup] [DEBUG] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2019-07-14 18:43:04,456 [django.server:124] [basehttp:log_message] [WARNING] "GET /455 HTTP/1.1" 404 2060
+2019-07-14 18:43:29,065 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 18:43:29,066 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `blog_post`.`id`, `blog_post`.`title`, `blog_post`.`body`, `blog_post`.`created_time`, `blog_post`.`modified_time`, `blog_post`.`excerpt`, `blog_post`.`category_id`, `blog_post`.`author_id` FROM `blog_post` ORDER BY `blog_post`.`created_time` DESC; args=()
+2019-07-14 18:43:29,069 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT VERSION(); args=None
+2019-07-14 18:43:29,072 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 18:43:29,075 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 18:43:29,078 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 18:43:29,081 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 18:43:29,082 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 18:43:29,084 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 18:43:29,085 [django.server:124] [basehttp:log_message] [INFO] "GET / HTTP/1.1" 200 12559
+2019-07-14 22:11:24,931 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:11:24,936 [django.db.backends:90] [utils:execute] [DEBUG] (0.002) SELECT `blog_post`.`id`, `blog_post`.`title`, `blog_post`.`body`, `blog_post`.`created_time`, `blog_post`.`modified_time`, `blog_post`.`excerpt`, `blog_post`.`category_id`, `blog_post`.`author_id` FROM `blog_post` ORDER BY `blog_post`.`created_time` DESC; args=()
+2019-07-14 22:11:24,940 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT VERSION(); args=None
+2019-07-14 22:11:24,943 [django.db.backends:90] [utils:execute] [DEBUG] (0.002) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 22:11:24,946 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 22:11:24,947 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 22:11:24,951 [django.db.backends:90] [utils:execute] [DEBUG] (0.002) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 22:11:24,953 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT `blog_category`.`id`, `blog_category`.`name` FROM `blog_category` WHERE `blog_category`.`id` = 1; args=(1,)
+2019-07-14 22:11:24,954 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2019-07-14 22:11:24,957 [django.server:124] [basehttp:log_message] [INFO] "GET / HTTP/1.1" 200 12559
+2019-07-14 22:11:35,631 [django.template:925] [base:_resolve_lookup] [DEBUG] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2019-07-14 22:11:35,632 [django.server:124] [basehttp:log_message] [WARNING] "GET /single.html HTTP/1.1" 404 2084
+2019-07-14 22:11:42,743 [django.template:925] [base:_resolve_lookup] [DEBUG] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2019-07-14 22:11:42,743 [django.server:124] [basehttp:log_message] [WARNING] "GET /single.html HTTP/1.1" 404 2084
+2019-07-14 22:11:59,453 [django.template:925] [base:_resolve_lookup] [DEBUG] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2019-07-14 22:11:59,454 [django.server:124] [basehttp:log_message] [WARNING] "GET /single.html HTTP/1.1" 404 2084
+2019-07-14 22:22:19,759 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:22:19,759 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:22:19,836 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2019-07-14 22:22:19,852 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-14 22:22:31,848 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:22:31,864 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:22:46,690 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:22:46,690 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:22:46,801 [django.db.backends:90] [utils:execute] [DEBUG] (0.016) SHOW FULL TABLES; args=None
+2019-07-14 22:22:46,801 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-14 22:22:56,648 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:22:56,650 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT VERSION(); args=None
+2019-07-14 22:24:19,971 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:24:19,973 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:24:27,835 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:24:27,835 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:25:24,088 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:25:24,088 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT VERSION(); args=None
+2019-07-14 22:26:27,042 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:26:27,043 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:26:40,200 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:26:40,201 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:26:40,286 [django.db.backends:90] [utils:execute] [DEBUG] (0.004) SHOW FULL TABLES; args=None
+2019-07-14 22:26:40,292 [django.db.backends:90] [utils:execute] [DEBUG] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-14 22:27:04,381 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-14 22:27:04,381 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT VERSION(); args=None
+2019-07-14 22:27:04,490 [django.db.backends:90] [utils:execute] [DEBUG] (0.015) SHOW FULL TABLES; args=None
+2019-07-14 22:27:04,490 [django.db.backends:90] [utils:execute] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

@@ -1,0 +1,249 @@
+2019-07-16 14:48:01,980 [django.request:152] [base:get_response] [WARNING] Not Found: /favicon.ico
+2019-07-16 16:25:45,400 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:28:22,914 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/4/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:30:27,487 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:30:47,677 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:33:03,862 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:44:17,917 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:47:17,023 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:48:47,595 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 115, in get
+    self.object = self.get_object()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 32, in get_object
+    queryset = self.get_queryset()
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\detail.py", line 74, in get_queryset
+    'cls': self.__class__.__name__
+ImproperlyConfigured: DetailView is missing a QuerySet. Define DetailView.model, DetailView.queryset, or override DetailView.get_queryset().
+2019-07-16 16:56:02,881 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /post/1/
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: as_view() takes exactly 1 argument (3 given)
+2019-07-16 17:36:58,063 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\python\python_code\blog_project\blog\views.py", line 33, in get_context_data
+    pagination_data = self.pagination_data(paginator, page, is_paginated)
+  File "D:\python\python_code\blog_project\blog\views.py", line 76, in pagination_data
+    right = page_range[page_number:page_number + 2]
+TypeError: sequence index must be integer, not 'slice'
+2019-07-16 17:39:03,209 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\python\python_code\blog_project\blog\views.py", line 33, in get_context_data
+    pagination_data = self.pagination_data(paginator, page, is_paginated)
+  File "D:\python\python_code\blog_project\blog\views.py", line 76, in pagination_data
+    right = page_range[page_number:page_number + 2]
+TypeError: sequence index must be integer, not 'slice'
+2019-07-16 17:42:10,009 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\python\python_code\blog_project\blog\views.py", line 33, in get_context_data
+    pagination_data = self.pagination_data(paginator, page, is_paginated)
+  File "D:\python\python_code\blog_project\blog\views.py", line 77, in pagination_data
+    if right[-1] < total_pages - 1:
+TypeError: 'set' object does not support indexing
+2019-07-16 17:42:36,339 [django.request:135] [exception:handle_uncaught_exception] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python\python_code\blog_project\venv\lib\site-packages\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\python\python_code\blog_project\blog\views.py", line 33, in get_context_data
+    pagination_data = self.pagination_data(paginator, page, is_paginated)
+  File "D:\python\python_code\blog_project\blog\views.py", line 82, in pagination_data
+    left = page_range[(page_number - 3) if (page_number - 3) > 0 else 0:page_number - 1]
+TypeError: sequence index must be integer, not 'slice'
+2019-07-16 17:47:47,180 [django.request:152] [base:get_response] [WARNING] Not Found: /contact.html
+2019-07-16 17:47:53,710 [django.request:152] [base:get_response] [WARNING] Not Found: /about.html
+2019-07-16 17:47:58,076 [django.request:152] [base:get_response] [WARNING] Not Found: /full-width.html
+2019-07-16 17:48:01,928 [django.request:152] [base:get_response] [WARNING] Not Found: /index.html
+2019-07-16 17:57:57,194 [django.request:152] [base:get_response] [WARNING] Not Found: /post/4/index.html
+2019-07-16 17:58:06,167 [django.request:152] [base:get_response] [WARNING] Not Found: /post/4/index.html
+2019-07-16 18:40:00,085 [django.request:152] [base:get_response] [WARNING] Not Found: /post/4少时诵诗书所所所所所所所所所所所所所所所所所所所所所所
+2019-07-16 20:06:47,719 [django.request:152] [base:get_response] [WARNING] Not Found: /post/4/index.html
+2019-07-16 20:07:00,578 [django.request:152] [base:get_response] [WARNING] Not Found: /post/4/about.html
+2019-07-16 20:07:07,698 [django.request:152] [base:get_response] [WARNING] Not Found: /index.html
+2019-07-16 20:07:11,250 [django.request:152] [base:get_response] [WARNING] Not Found: /about.html

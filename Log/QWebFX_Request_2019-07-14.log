@@ -1,0 +1,5 @@
+2019-07-14 18:42:57,894 [django.request:152] [base:get_response] [WARNING] Not Found: /favicon.ico
+2019-07-14 18:43:04,454 [django.request:152] [base:get_response] [WARNING] Not Found: /455
+2019-07-14 22:11:35,631 [django.request:152] [base:get_response] [WARNING] Not Found: /single.html
+2019-07-14 22:11:42,743 [django.request:152] [base:get_response] [WARNING] Not Found: /single.html
+2019-07-14 22:11:59,453 [django.request:152] [base:get_response] [WARNING] Not Found: /single.html
